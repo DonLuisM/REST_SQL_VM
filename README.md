@@ -46,4 +46,25 @@ This project is built with Flask to manage a database using SQL, deployed on a V
    ```
    flask run
    ```
-
+### 🖥️ Using a VM
+1. Open CMD and start the Virtual Machine:
+   ```
+   vagrant up
+   ```
+2. Access the VM:
+   ```
+   vagrant ssh
+   ```
+3. Run the API server:
+   ```
+   export FLASK_APP=apirest_mysql.py
+   python3 -m flask run --host=0.0.0.0 
+   ```
+4. Stop the VM:
+   ```
+   vagrant halt
+   ```
+5. Destroy the VM (if needed):
+   ```
+   vagrant destroy -f
+   ```
